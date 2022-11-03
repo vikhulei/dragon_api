@@ -1,6 +1,6 @@
 const TRAITS = require("./traits")
 
-const INITIAL_VALUES = {
+const DEFAULT_PROPERTIES = {
    nickname: "unnamed",
    get birthday()  {
       return new Date()
@@ -23,9 +23,9 @@ const INITIAL_VALUES = {
 
 class Dragon {
      constructor({birthday, nickname, traits} = {}) {
-        this.birthday = birthday || INITIAL_VALUES.birthday
-        this.nickname = nickname || INITIAL_VALUES.nickname
-        this.traits = traits || INITIAL_VALUES.randomTraits
+        this.birthday = birthday || DEFAULT_PROPERTIES.birthday
+        this.nickname = nickname || DEFAULT_PROPERTIES.nickname
+        this.traits = traits || DEFAULT_PROPERTIES.randomTraits
      }
 }
 
