@@ -8,6 +8,7 @@ class GenerationEngine {
     }
 
     start() {
+        console.log("I started")
         this.buildNewGeneration()
     }
 
@@ -16,7 +17,7 @@ class GenerationEngine {
     }
 
     buildNewGeneration() {
-        this.generation = new Generation();
+        this.generation = new Generation()
 
         GenerationTable.storeGeneration(this.generation)
 
