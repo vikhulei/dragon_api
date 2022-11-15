@@ -1,6 +1,6 @@
 #!/bin/bash
 
-export PGPASSWORD="node_password"
+export PGPASSWORD="pwd"
 
 echo "Configuring dragonstackdb"
 
